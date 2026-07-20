@@ -13,4 +13,4 @@ A polished, downloadable game hub inspired by the feel of a modern social gaming
 - styles.css — premium visual design
 - script.js — 300-game catalog and filtering
 - launch-gamehub.cmd — Windows launcher
-also make sure to get pythoin not old
+also make sure to get python not old
