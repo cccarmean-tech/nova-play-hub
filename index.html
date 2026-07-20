@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NovaPlay | 300 Premium Worlds</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+
+    <header class="topbar">
+      <div class="brand-block">
+        <div class="brand-mark">N</div>
+        <div>
+          <p class="brand-name">NovaPlay</p>
+          <p class="brand-subtitle">Immersive worlds</p>
+        </div>
+      </div>
+      <nav class="topnav">
+        <a href="#games">Discover</a>
+        <a href="#featured">Featured</a>
+        <a href="launch-gamehub.cmd">Launch</a>
+      </nav>
+      <a class="download-pill" href="launch-gamehub.cmd">Open launcher</a>
+    </header>
+
+    <main>
+      <section class="hero" id="featured">
+        <div class="hero-copy">
+          <p class="eyebrow">Player-first universe</p>
+          <h1>Explore 300 polished worlds in one premium hub.</h1>
+          <p class="hero-text">
+            From fast-paced action to calm creative spaces, NovaPlay brings together
+            refined experiences designed to feel modern, welcoming, and deeply playable.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#games">Browse games</a>
+            <a class="btn secondary" href="launch-gamehub.cmd">Download launcher</a>
+          </div>
+          <div class="stats-row">
+            <div>
+              <strong>300</strong>
+              <span>curated games</span>
+            </div>
+            <div>
+              <strong>4.9/5</strong>
+              <span>community rating</span>
+            </div>
+            <div>
+              <strong>24/7</strong>
+              <span>live discovery</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-panel">
+          <p class="panel-label">Featured drop</p>
+          <h3 id="featuredTitle">Aether Zenith</h3>
+          <p id="featuredDescription">
+            A cinematic sky adventure where light and gravity shift in real time.
+          </p>
+          <div class="panel-tags" id="featuredTags"></div>
+        </div>
+      </section>
+
+      <section class="controls">
+        <label class="search-box" for="searchInput">
+          <span>🔍</span>
+          <input type="text" id="searchInput" placeholder="Search worlds, creators, or moods" />
+        </label>
+        <div class="chip-row" id="chipRow"></div>
+      </section>
+
+      <section class="game-grid" id="games"></section>
+    </main>
+
+    <div class="modal" id="gameModal" aria-hidden="true">
+      <div class="modal-card">
+        <button class="modal-close" id="closeModal" aria-label="Close">×</button>
+        <div class="modal-header">
+          <p class="eyebrow">Experience preview</p>
+          <h3 id="modalTitle">Game title</h3>
+        </div>
+        <p id="modalDescription" class="modal-description"></p>
+        <div class="modal-badges" id="modalBadges"></div>
+        <div class="modal-footer">
+          <div>
+            <strong id="modalPlayers">0+</strong>
+            <span>active players</span>
+          </div>
+          <button class="btn primary" id="launchButton">Launch experience</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
